@@ -1,0 +1,418 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    /* PRIMARY COLORS */
+    --p01: hsl(322, 100%, 66%);
+    /* NEUTRAL COLORS */
+    --n01: hsl(193, 100%, 96%);
+    --n02: hsl(192, 100%, 9%);
+    --n03: hsl(208, 11%, 55%);
+    /* FONTS */
+    --f01: 'Poppins', sans-serif;
+    --f02: 'Open Sans', sans-serif;
+}
+h1, h2 {
+    font-family: var(--f01);
+}
+h1 {
+    font-size: 2.425rem;
+}
+p {
+    font-size: 1rem;
+    font-family: var(--f02);
+}
+hr {
+    display: none;
+}
+body, html {
+    width: 100%;
+    height: fit-content;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.contMain {
+    width: 100%;
+    max-width: 1440px;
+    height: fit-content;
+}
+.contDescription {
+    width: 100%;
+    min-height: 720px;
+    height: 100%;
+    padding: 50px 80px;
+    background-image: url('./images/bg-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-size: contain;
+    background-color: var(--n01);
+}
+.logoAndButton {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoHuddle img {
+    width: 200px;
+}
+.tryItFree {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0px 5px 20px hsla(192, 100%, 9%, 0.145);
+}
+.tryItFree :hover {
+    cursor: pointer;
+    color: var(--n03);
+}
+.descAndImage {
+    margin-top: 70px;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.description {
+    width: 100%;
+    max-width: 520px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.description > p {
+    width: 100%;
+    margin: 40px 0;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+.buttonGetStartedForFree {
+    width: 280px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background: var(--p01);
+    box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.3);
+    color: white;
+    font-weight: 600;
+}
+.buttonGetStartedForFree :hover {
+    cursor: pointer;
+    background: hsl(322, 100%, 82%);
+    width: 280px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px hsla(192, 100%, 9%, 0.145);
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageDescription{
+    width: 700px;
+}
+.imageDescription img{
+    width: 100%;
+}
+.contCards {
+    padding: 160px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+.cardInfo {
+    max-width: 1230px;
+    width: 100%;
+    min-height: 440px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 50px 30px;
+    background-color: white;
+    box-shadow: 0px 5px 20px hsla(192, 100%, 9%, 0.145);
+}
+.imageCardSide {
+    width: auto;
+    height: 330px;
+}
+.imageCardSide img {
+    height: 100%;
+}
+.infoSide {
+    width: 500px;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.infoSide > p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--n03);
+}
+.growTogether, .yourUsers {
+    flex-direction: row-reverse;
+}
+.flowingConversationsImage {
+    margin-left: 90px;
+}
+.readyTo {
+    max-width: 800px;
+    min-height: 280px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    top: 100px;
+    z-index: 2;
+
+}
+.readyTo h2 {
+    font-size: 2rem;
+}
+footer {
+    width: 100%;
+    height: 560px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--n02);
+}
+.foot {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    padding: 190px 120px 120px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    color: white;
+}
+.logoHuddleFoot img {
+    filter: hue-rotate();
+    fill: white;
+}
+.footCont {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-weight: 400;
+}
+.footContLeftSide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.aboutUs {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.iconAboutUs {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+}
+.location > p {
+    width: 350px;
+    height: 60px;
+}
+.footContMiddleSide {
+    width: 100%;
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+.footContMiddleSide p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.midLeft, .midRight {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footContRightSide {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-left: 72px;
+}
+.iconSocialMedia {
+    width: 32px;
+    height: 32px;
+    border: 1px white solid;
+    border-radius: 50%;
+    display:grid;
+    place-items: center;
+}
+.iconSocialMedia:hover {
+    border: 1px solid var(--p01);
+    cursor: pointer;
+}
+.iconSocialMedia img {
+    width: 16px;
+}
+.copyright {
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 1.625rem;
+    }
+    p {
+        font-size: .7rem;
+    }
+    
+    .contMain {
+        text-align: center;
+    }
+    .contDescription {
+        height: fit-content;
+        padding: 20px 28px;
+        background-image: url('./images/bg-hero-mobile.svg');
+    }
+    .logoHuddle img {
+        width: 100px;
+    }
+    .tryItFree {
+        width: 90px;
+        height: 25px;
+    }
+    .descAndImage {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        align-items: center;
+    }
+    .description {
+        align-items: center;
+    }
+    .description > p {
+        margin: 28px 0;
+        font-size: 1.025rem;
+    }
+    .buttonGetStartedForFree {
+        width: 200px;
+        height: 40px;
+    }
+    .imageDescription{
+        display: flex;
+        align-items: center;
+        width: 300px;
+        margin-top: 40px;
+    }
+    .contCards {
+        padding: 60px 0 0 0;
+        gap: 35px;
+    }
+    
+    .cardInfo {
+        max-width: 335px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        gap: 40px;
+        padding: 40px 50px;
+    }
+    .imageCardSide {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .imageCardSide img {
+        width: 100%;
+    }
+    .infoSide {
+        width: 100%;
+        margin-left: 0;
+    }
+    .infoSide > p {
+        letter-spacing: .01rem;
+        font-size: .79rem;
+    }
+    .growTogether, .yourUsers {
+        flex-direction: none;
+    }
+    .flowingConversationsImage {
+        margin-left: 0;
+    }
+    .readyTo {
+        max-width: 800px;
+        width: 355px;
+        height: 180px;
+        min-height: 180px;
+        padding: 40px 25px;
+        gap: 25px;
+        top: 80px;
+    }
+    .readyTo h2 {
+        font-size: 1.125rem;
+    }
+    footer {
+        height: fit-content;
+    }
+    .foot {
+        padding: 140px 15px 40px 15px;
+        gap: 24px;
+    }
+    .footCont {
+        display: flex;
+        grid-template-columns: none;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .logoHuddleFoot {
+        margin:  0;
+    }
+    .footContLeftSide {
+        gap: 25px;
+    }
+    .location > p {
+        width: 100%;
+        height: auto;
+    }
+    .footContMiddleSide {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footContRightSide {
+        justify-content: center;
+        margin-left: 0;
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+}
